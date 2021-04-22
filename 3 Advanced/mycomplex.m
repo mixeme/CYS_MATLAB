@@ -50,7 +50,22 @@ classdef mycomplex
         function [obj] = set_a(obj, a)
             obj.a = a;
         end
+        
+        function [obj] = ctranspose(obj)
+            obj.im = - obj.im;
+        end
+        
+        function [res] = eq(a, b)
+            if (a.re == b.re && a.im == b.im)
+                res = true;
+            else
+                res = false;
+            end
+        end
+        
     end
+    
+
     
     %% Статические методы
     methods(Static)
