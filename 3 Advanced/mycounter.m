@@ -1,8 +1,9 @@
 classdef mycounter < handle
-    %UNTITLED3 Summary of this class goes here
-    %   Detailed explanation goes here
+    % Класс счётчика для демонстрации поведениея объекта-ссылки
     
     properties
+        % count - переменная счётчик, изменяемая с помощью унарных
+        % операторов плюс и минус
         count
     end
     
@@ -26,4 +27,3 @@ classdef mycounter < handle
         end        
     end
 end
-
